@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.dashboard_fragment.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_dailyTaskFragment"
+            app:destination="@id/dailyTaskFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_depositFragment"
+            app:destination="@id/depositFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_statisticFragment"
+            app:destination="@id/statisticFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.profile_user_fragment.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/dailyTaskFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.daily_task.DailyTaskFragment"
+        android:label="fragment_daily_task"
+        tools:layout="@layout/fragment_daily_task" />
+    <fragment
+        android:id="@+id/depositFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.deposit_fragment.DepositFragment"
+        android:label="fragment_deposit"
+        tools:layout="@layout/fragment_deposit" >
+        <action
+            android:id="@+id/action_depositFragment_to_makeDepositFragment"
+            app:destination="@id/makeDepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeDepositFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.deposit_fragment.MakeDepositFragment"
+        android:label="fragment_make_deposit"
+        tools:layout="@layout/fragment_make_deposit" >
+        <action
+            android:id="@+id/action_makeDepositFragment_to_transactionDepositFragment"
+            app:destination="@id/transactionDepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionDepositFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.deposit_fragment.TransactionDepositFragment"
+        android:label="fragment_transaction_deposit"
+        tools:layout="@layout/fragment_transaction_deposit" >
+        <action
+            android:id="@+id/action_transactionDepositFragment_to_chooseBankFragment"
+            app:destination="@id/chooseBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseBankFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.deposit_fragment.ChooseBankFragment"
+        android:label="fragment_choose_bank"
+        tools:layout="@layout/fragment_choose_bank" />
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.statistic_fragment.StatisticFragment"
+        android:label="fragment_statistic"
+        tools:layout="@layout/fragment_statistic" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.zti.presentation.main_activity.fragment.notification_fragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

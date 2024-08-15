@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/easypaisa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/choose_bank"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bank"
+            />
+        <TextView
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="EASY PAISA"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
